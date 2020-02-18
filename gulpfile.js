@@ -32,6 +32,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 //   .pipe(rename({suffix:'.min'}))
 //   .pipe(gulp.dest('app/css'))
 // });
+
 gulp.task('img', function() {
     return gulp.src('app/img/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({ // С кешированием
