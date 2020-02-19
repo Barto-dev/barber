@@ -61,6 +61,7 @@
                 </li>
             </ul>
         </section>
+
         <div class="index-columns">
           <section class="news">
               <h2>Новости</h2>
@@ -90,46 +91,47 @@
               </button>
           </section>
         </div>
+        <div class="index-columns">
+          <section class="contacts">
+              <h2>Контактная информация</h2>
+              <p>
+                  Барбершоп «Бородинский»
+                  <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                  <br> Телефон: +7 (812) 666-02-66
+              </p>
+              <p>
+                  Время работы:
+                  <br> пн—пт: с 10:00 до 22:00
+                  <br> сб—вс: с 10:00 до 19:00
+              </p>
+              <a class="button" href="map.html">Как проехать</a>
+              <a class="button" href="contacts.html">Обратная связь</a>
+          </section>
 
-        <section class="contacts">
-            <h2>Контактная информация</h2>
-            <p>
-                Барбершоп «Бородинский»
-                <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-                <br> Телефон: +7 (812) 666-02-66
-            </p>
-            <p>
-                Время работы:
-                <br> пн—пт: с 10:00 до 22:00
-                <br> сб—вс: с 10:00 до 19:00
-            </p>
-            <a class="button" href="map.html">Как проехать</a>
-            <a class="button" href="contacts.html">Обратная связь</a>
-        </section>
-
-        <section class="appointment">
-            <h2>Записаться</h2>
-            <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-            <form action="https://echo.htmlacademy.ru" class="appointment-form" method="post">
-              <p>
-                <label for="appointment-date">Дата</label>
-                <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
-              </p>
-              <p>
-                <label for="appointment-time">Дата</label>
-                <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-              </p>
-              <p>
-                <label for="appointment-name">Дата</label>
-                <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
-              </p>
-              <p>
-                <label for="appointment-phone">Дата</label>
-                <input id="appointment-phone" type="tel"  name="phone" value="" placeholder="+7 123 456-78-90">
-              </p>
-              <button class="button" type="submit">Отправить</button>
-            </form>
-        </section>
+          <section class="appointment">
+              <h2>Записаться</h2>
+              <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+              <form action="https://echo.htmlacademy.ru" class="appointment-form" method="post">
+                <p>
+                  <label for="appointment-date">Дата</label>
+                  <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                </p>
+                <p>
+                  <label for="appointment-time">Дата</label>
+                  <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                </p>
+                <p>
+                  <label for="appointment-name">Дата</label>
+                  <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+                </p>
+                <p>
+                  <label for="appointment-phone">Дата</label>
+                  <input id="appointment-phone" type="tel"  name="phone" value="" placeholder="+7 123 456-78-90">
+                </p>
+                <button class="button" type="submit">Отправить</button>
+              </form>
+          </section>
+        </div>
     </main>
     <footer class="main-footer">
         <p class="footer-contacts">
@@ -173,7 +175,7 @@
       </p>
       <p class="login-password-info">
         <label for="login-password-info" class="login-checkbox">
-          <input type="checkbox" class="visually-hidden" name="remember">
+          <input id="login-password-info" type="checkbox" class="visually-hidden" name="remember">
           <span class="checkbox-indicator"></span>
           Запомните меня
         </label>
