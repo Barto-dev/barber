@@ -13,6 +13,9 @@ body {
   background-position: top center;
   background-repeat: no-repeat; }
 
+.visually-hidden {
+  display: none; }
+
 a {
   text-decoration: none; }
 
@@ -158,3 +161,135 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none; }
+
+/*****Сеточные-стили------*/
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px; }
+
+.main-header {
+  margin-bottom: 75px; }
+
+.main-header-logo {
+  width: 368px;
+  height: 153px;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0; }
+
+.user-navigation {
+  width: 140px;
+  margin: 0;
+  padding: 0; }
+
+.main-navigation {
+  background-color: transparent;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #000; }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.main-navigation-wrapper .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 72px; }
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.feature-item {
+  width: 300px; }
+
+.features {
+  margin-bottom: 80px; }
+
+.index-columns {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.news, .contacts {
+  width: 380px; }
+
+.gallery, .appointment {
+  width: 300px; }
+
+.main-footer {
+  margin-top: 65px;
+  padding: 60px 0; }
+
+.footer-contacts {
+  margin: 0;
+  width: 320px;
+  margin-right: 80px; }
+
+.footer-copyright {
+  margin: 0;
+  width: 100px;
+  margin-left: auto; }
+
+.footer-social {
+  width: 165px; }
+
+.main-footer .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
