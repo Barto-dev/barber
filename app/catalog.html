@@ -10,33 +10,39 @@
 </head>
 
 <body class="card-page">
+
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo2.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-      </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="info.html">Информация</a>
-        </li>
-        <li>
-          <a href="news.html">Новости</a>
-        </li>
-        <li>
-          <a href="price.html">Прайс-лист</a>
-        </li>
-        <li class="site-navigation-current">
-          <a href="catalog.html">Магазин</a>
-        </li>
-        <li>
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-      <ul class="user-navigation">
-        <li class="login-link">Вход</li>
-      </ul>
-    </nav>
+      <nav class="main-navigation container">
+
+          <div class="iner-page-container">
+          <a class="main-header-logo" href="index.html">
+              <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+          </a>
+          <ul class="site-navigation">
+              <li>
+                  <a href="info.html">Информация</a>
+              </li>
+              <li>
+                  <a href="news.html">Новости</a>
+              </li>
+              <li>
+                  <a href="price.html">Прайс-лист</a>
+              </li>
+              <li class="site-navigation-current">
+                  <a href="catalog.html">Магазин</a>
+              </li>
+              <li>
+                  <a href="contacts.html">Контакты</a>
+              </li>
+          </ul>
+          <ul class="user-navigation">
+              <li class="login-link">Вход</li>
+          </ul>
+
+        </div>
+      </nav>
   </header>
+
   <main class="container">
     <h1 class="page-title">Cредства для ухода</h1>
 
@@ -49,6 +55,8 @@
       </li>
       <li class="breadcrumbs-current">Средства для ухода</li>
     </ul>
+
+    <div class="catalog-columns">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" class="filter" method="get">
@@ -229,33 +237,36 @@
         </li>
       </ul>
     </section>
+    </div>
   </main>
   <footer class="main-footer">
-    <p class="footer-contacts">
-      Барбершоп «Бородинский»
-      <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-      <br>
-      <a href="map.html">Как нас найти?</a>
-      <br> Телефон: +7 (812) 666-02-66
-    </p>
-    <div class="footer-social">
-      <b>Давайте дружить!</b>
-      <ul>
-        <li>
-          <a class="social-button" href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Инстаграм</a>
-        </li>
-      </ul>
-    </div>
-    <p class="footer-copyright">
-      <b>Разработано:</b>
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-    </p>
+    <div class="container">
+        <p class="footer-contacts">
+            Барбершоп «Бородинский»
+            <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+            <br>
+            <a href="map.html">Как нас найти?</a>
+            <br> Телефон: +7 (812) 666-02-66
+        </p>
+        <div class="footer-social">
+            <b>Давайте дружить!</b>
+            <ul>
+                <li>
+                    <a class="social-button" href="#">Вконтакте</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">Фейсбук</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">Инстаграм</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Разработано:</b>
+            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        </p>
+      </div>
   </footer>
 
   <section class="modal modal-login">

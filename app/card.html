@@ -7,11 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/outine.css">
 </head>
 
 <body class="card-page">
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
+          <div class="main-navigation-wrapper">
+            <div class="iner-page-container">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
             </a>
@@ -35,6 +38,8 @@
             <ul class="user-navigation">
                 <li class="login-link">Вход</li>
             </ul>
+            </div>
+          </div>
         </nav>
     </header>
     <main class="container">
@@ -54,23 +59,25 @@
             <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
         </ul>
 
-        <section class="product-photos">
-            <h2 class="visually-hidden">Изображения товара</h2>
-            <p class="product-photo-full">
-                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
-            </p>
-            <ul class="product-photo-preview">
-                <li>
-                    <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
-                </li>
-                <li>
-                    <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
-                </li>
-                <li>
-                    <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
-                </li>
-            </ul>
-        </section>
+        <div class="catalog-columns">
+          <section class="product-photos">
+              <h2 class="visually-hidden">Изображения товара</h2>
+              <p class="product-photo-full">
+                  <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+              </p>
+              <ul class="product-photo-preview">
+                  <li>
+                      <img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас">
+                  </li>
+                  <li>
+                      <img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль">
+                  </li>
+                  <li>
+                      <img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части">
+                  </li>
+              </ul>
+          </section>
+
 
         <section class="product-info">
             <h2 class="visually-hidden">Описание товара</h2>
@@ -92,33 +99,37 @@
                 <li>Удобная кожаная косметичка</li>
             </ul>
         </section>
+        </div>
+
     </main>
     <footer class="main-footer">
-        <p class="footer-contacts">
-            Барбершоп «Бородинский»
-            <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
-            <br>
-            <a href="map.html">Как нас найти?</a>
-            <br> Телефон: +7 (812) 666-02-66
-        </p>
-        <div class="footer-social">
-            <b>Давайте дружить!</b>
-            <ul>
-                <li>
-                    <a class="social-button" href="#">Вконтакте</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">Фейсбук</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">Инстаграм</a>
-                </li>
-            </ul>
+      <div class="container">
+          <p class="footer-contacts">
+              Барбершоп «Бородинский»
+              <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+              <br>
+              <a href="map.html">Как нас найти?</a>
+              <br> Телефон: +7 (812) 666-02-66
+          </p>
+          <div class="footer-social">
+              <b>Давайте дружить!</b>
+              <ul>
+                  <li>
+                      <a class="social-button" href="#">Вконтакте</a>
+                  </li>
+                  <li>
+                      <a class="social-button" href="#">Фейсбук</a>
+                  </li>
+                  <li>
+                      <a class="social-button" href="#">Инстаграм</a>
+                  </li>
+              </ul>
+          </div>
+          <p class="footer-copyright">
+              <b>Разработано:</b>
+              <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
         </div>
-        <p class="footer-copyright">
-            <b>Разработано:</b>
-            <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
     </footer>
 
     <section class="modal modal-login">

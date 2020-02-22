@@ -338,8 +338,8 @@ body {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+}
 
-=======
 /*****************
 ****Card.html*****
 *****************/
@@ -504,4 +504,99 @@ body {
 
   background-color: #fff;
 
+}
+
+
+.product-photos {
+  width: 460px;
+}
+
+.product-info {
+  width: 390px;
+}
+
+.catalog-columns {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-photo-preview {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 0;
+}
+
+.iner-page-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.iner-page-container .main-header-logo {
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+  order:0;
+}
+
+.iner-page-container .user-navigation {
+  margin-left: auto;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.card-page .main-header {
+  margin-bottom: 50px;
+  background-color: #000;
+  height: 113px;
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.filters {
+  width: 180px;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
