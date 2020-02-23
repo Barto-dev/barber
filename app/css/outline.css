@@ -35,7 +35,7 @@ body *:hover {
 }
 
 body *::before {
-  content: attr(1);
+  content: attr(class);
   position: absolute;
   top: var(--outline-width);
   right: var(--outline-width);
