@@ -28,18 +28,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.content-box-component {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box; }
-
 a {
   text-decoration: none; }
 
@@ -101,25 +89,43 @@ img {
 .index-columns {
   color: #000000;
   background-color: #f6f3f0;
-  background-image: url(../img/pattern-light.jpg);
-  background-position: 0 0;
-  background-repeat: repeat; }
+  background-image: url(../img/shadow-between.png), url(../img/pattern-light.jpg);
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat; }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 42px; }
 
 .news-list {
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
   list-style: none; }
 
 .news-item {
+  margin-bottom: 25px;
   text-transform: none; }
 
+.news-item p {
+  margin: 0; }
+
 .gallery-content {
+  height: 164px;
+  margin: 0;
   background-color: #cccccc;
   border: 7px solid #ffffff; }
 
+.gallery-content img {
+  width: 286px;
+  height: 164px; }
+
 .button {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 16px;
   /* чтоб кнопки наследовали*/
   font: inherit;
   text-align: center;
@@ -136,10 +142,86 @@ img {
   background-color: #663d15;
   outline: none; }
 
+.button:disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000; }
+
+.gallery-container {
+  position: relative;
+  height: 260px; }
+
+.gallery-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0; }
+
+.gallery-button-back {
+  left: 0; }
+
+.gallery-button-next {
+  right: 0; }
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 25px; }
+
+.appointment-info {
+  margin: 0;
+  margin-bottom: 15px; }
+
+.appointment-form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.appointment-item {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 140px; }
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px; }
+
+.appointment-item input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 140px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000; }
+
 .appointment input {
   font: inherit;
   background-color: transparent;
   border: 2px solid #000; }
+
+.appointment .button {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 10px;
+  margin-right: 0; }
 
 .appointment input:focus {
   border: 2px solid #663d15;
